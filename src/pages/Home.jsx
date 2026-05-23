@@ -77,11 +77,11 @@ export default function Home() {
           pointerEvents: 'none',
         }}>⚡</div>
 
-        <div ref={heroRef} className="container" style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 32px' }}>
+        <div ref={heroRef} className="container hero-content" style={{ position: 'relative', zIndex: 1, flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 32px' }}>
           <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, lineHeight: 0.95, letterSpacing: '-0.03em', marginBottom: 32 }}>
             {tx.title.map((line, i) => (
               <div key={i} style={{
-                fontSize: 'clamp(4rem, 12vw, 10rem)',
+                fontSize: 'clamp(3rem, 12vw, 10rem)',
                 color: i === 2 ? 'var(--yellow)' : 'var(--white)',
                 display: 'block',
               }}>
@@ -90,7 +90,7 @@ export default function Home() {
             ))}
           </h1>
 
-          <p style={{
+          <p className="hero-sub" style={{
             fontFamily: 'var(--font-body)',
             fontWeight: 300,
             fontSize: 'clamp(1rem, 2vw, 1.3rem)',
@@ -102,7 +102,7 @@ export default function Home() {
             {tx.sub}
           </p>
 
-          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+          <div className="hero-buttons" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
             <Link to="/spectacles" style={{
               display: 'inline-flex', alignItems: 'center', gap: 10,
               background: 'var(--yellow)',
@@ -182,6 +182,12 @@ export default function Home() {
         @keyframes pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50% { opacity: 0.5; transform: scale(0.85); }
+        }
+        @media (max-width: 768px) {
+          .hero-content { align-items: center; text-align: center; padding: 0 24px !important; }
+          .hero-sub { max-width: 100% !important; }
+          .hero-buttons { flex-direction: column; width: 100%; }
+          .hero-buttons a { justify-content: center; }
         }
       `}</style>
     </div>

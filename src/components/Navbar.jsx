@@ -55,7 +55,7 @@ export default function Navbar() {
       }}>
         {/* Logo */}
         <NavLink to="/" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{
+          <span className="nav-logo" style={{
             fontFamily: 'var(--font-display)',
             fontWeight: 800,
             fontSize: '1.15rem',
@@ -223,7 +223,8 @@ export default function Navbar() {
       <style>{`
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
-          .burger { display: flex !important; }
+          .burger { display: flex !important; order: -1; }
+          .nav-logo { font-size: clamp(0.65rem, 4vw, 1.15rem) !important; letter-spacing: 0 !important; }
         }
       `}</style>
     </>
