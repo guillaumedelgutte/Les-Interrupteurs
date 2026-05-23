@@ -158,8 +158,8 @@ export default function Navbar() {
       {open && (
         <div style={{
           position: 'fixed',
-          inset: 0,
-          zIndex: 99,
+          top: 0, left: 0, right: 0, bottom: 0,
+          zIndex: 101,
           background: 'var(--black)',
           display: 'flex',
           flexDirection: 'column',
@@ -167,6 +167,22 @@ export default function Navbar() {
           justifyContent: 'center',
           gap: 8,
         }}>
+          <button
+            onClick={() => setOpen(false)}
+            style={{
+              position: 'absolute',
+              top: 20, right: 24,
+              background: 'none',
+              border: 'none',
+              color: 'var(--white)',
+              fontSize: '2rem',
+              cursor: 'pointer',
+              lineHeight: 1,
+            }}
+            aria-label="Fermer"
+          >
+            ✕
+          </button>
           {links.map(({ path, label }) => (
             <NavLink
               key={path}
