@@ -74,6 +74,35 @@ export default function Contact() {
               : 'Note: this form is currently in demo mode. Messages are not sent to an inbox yet.'}
           </p>
 
+          {/* Mobile-only Instagram button */}
+          <div className="contact-mobile-links" style={{
+            display: 'none',
+            flexDirection: 'column',
+            gap: 12,
+            marginBottom: 32,
+          }}>
+            <a
+              href="https://www.instagram.com/les.interrupteurs.nyc/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
+                padding: '18px',
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                borderRadius: 'var(--radius-lg)',
+                color: 'var(--white)',
+                fontFamily: 'var(--font-display)',
+                fontWeight: 700,
+                fontSize: '1rem',
+                textDecoration: 'none',
+              }}
+            >
+              <span style={{ fontSize: '1.4rem' }}>📸</span>
+              @les.interrupteurs.nyc
+            </a>
+          </div>
+
           <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 400px', gap: 80, alignItems: 'start' }}>
 
             {/* Form */}
@@ -257,24 +286,6 @@ export default function Contact() {
             >
               <span style={{ fontSize: '1.4rem' }}>📸</span>
               @les.interrupteurs.nyc
-            </a>
-            <a
-              href="mailto:frenchimprovnyc@gmail.com"
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
-                padding: '18px',
-                background: 'rgba(240,224,64,0.08)',
-                border: '1px solid rgba(240,224,64,0.2)',
-                borderRadius: 'var(--radius-lg)',
-                color: 'var(--yellow)',
-                fontFamily: 'var(--font-display)',
-                fontWeight: 700,
-                fontSize: '1rem',
-                textDecoration: 'none',
-              }}
-            >
-              <span style={{ fontSize: '1.4rem' }}>✉️</span>
-              {lang === 'fr' ? 'Nous écrire' : 'Email us'}
             </a>
           </div>
         </div>
