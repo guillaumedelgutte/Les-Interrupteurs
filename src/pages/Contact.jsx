@@ -74,12 +74,12 @@ export default function Contact() {
               : 'Note: this form is currently in demo mode. Messages are not sent to an inbox yet.'}
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 400px', gap: 80, alignItems: 'start' }}>
+          <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 400px', gap: 80, alignItems: 'start' }}>
 
             {/* Form */}
             {!sent ? (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                <div className="contact-name-email" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
                   <div>
                     <label style={{ display: 'block', fontFamily: 'var(--font-display)', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gray-light)', marginBottom: 8 }}>
                       {tx.name}
@@ -142,7 +142,7 @@ export default function Contact() {
                   />
                 </div>
 
-                <button type="submit" style={{
+                <button type="submit" className="contact-submit" style={{
                   alignSelf: 'flex-start',
                   background: 'var(--yellow)',
                   color: 'var(--black)',
@@ -189,7 +189,7 @@ export default function Contact() {
                   {tx.orContact}
                 </div>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/les.interrupteurs.nyc/"
                   target="_blank"
                   rel="noreferrer"
                   style={{
@@ -231,12 +231,62 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          {/* Mobile-only tap buttons */}
+          <div className="contact-mobile-links" style={{
+            display: 'none',
+            flexDirection: 'column',
+            gap: 12,
+            marginTop: 32,
+          }}>
+            <a
+              href="https://www.instagram.com/les.interrupteurs.nyc/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
+                padding: '18px',
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                borderRadius: 'var(--radius-lg)',
+                color: 'var(--white)',
+                fontFamily: 'var(--font-display)',
+                fontWeight: 700,
+                fontSize: '1rem',
+                textDecoration: 'none',
+              }}
+            >
+              <span style={{ fontSize: '1.4rem' }}>📸</span>
+              @les.interrupteurs.nyc
+            </a>
+            <a
+              href="mailto:frenchimprovnyc@gmail.com"
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
+                padding: '18px',
+                background: 'rgba(240,224,64,0.08)',
+                border: '1px solid rgba(240,224,64,0.2)',
+                borderRadius: 'var(--radius-lg)',
+                color: 'var(--yellow)',
+                fontFamily: 'var(--font-display)',
+                fontWeight: 700,
+                fontSize: '1rem',
+                textDecoration: 'none',
+              }}
+            >
+              <span style={{ fontSize: '1.4rem' }}>✉️</span>
+              {lang === 'fr' ? 'Nous écrire' : 'Email us'}
+            </a>
+          </div>
         </div>
       </section>
 
       <style>{`
         @media (max-width: 768px) {
-          .contact-grid { grid-template-columns: 1fr !important; }
+          .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .contact-grid > div:last-child { display: none !important; }
+          .contact-name-email { grid-template-columns: 1fr !important; }
+          .contact-submit { align-self: stretch !important; text-align: center; justify-content: center; }
+          .contact-mobile-links { display: flex !important; }
         }
       `}</style>
     </div>
