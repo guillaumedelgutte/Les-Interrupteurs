@@ -207,7 +207,7 @@ export default function Contact() {
             )}
 
             {/* Sidebar */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+            <div className="contact-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
               <div style={{
                 padding: '28px',
                 background: 'rgba(255,255,255,0.02)',
@@ -294,7 +294,7 @@ export default function Contact() {
       <style>{`
         @media (max-width: 768px) {
           .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .contact-grid > div:last-child { display: none !important; }
+          .contact-sidebar { display: none !important; }
           .contact-name-email { grid-template-columns: 1fr !important; }
           .contact-submit { align-self: stretch !important; text-align: center; justify-content: center; }
           .contact-mobile-links { display: flex !important; }
