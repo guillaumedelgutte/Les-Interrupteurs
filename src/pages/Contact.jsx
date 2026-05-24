@@ -260,34 +260,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          {/* Mobile-only tap buttons */}
-          <div className="contact-mobile-links" style={{
-            display: 'none',
-            flexDirection: 'column',
-            gap: 12,
-            marginTop: 32,
-          }}>
-            <a
-              href="https://www.instagram.com/les.interrupteurs.nyc/"
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
-                padding: '18px',
-                background: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                borderRadius: 'var(--radius-lg)',
-                color: 'var(--white)',
-                fontFamily: 'var(--font-display)',
-                fontWeight: 700,
-                fontSize: '1rem',
-                textDecoration: 'none',
-              }}
-            >
-              <span style={{ fontSize: '1.4rem' }}>📸</span>
-              @les.interrupteurs.nyc
-            </a>
-          </div>
         </div>
       </section>
 
