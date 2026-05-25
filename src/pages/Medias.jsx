@@ -11,6 +11,7 @@ const tourPhotos = [
 const affichePhotos = [
   { id: 1, label: 'Affiche — juin 2025', w: 1, h: 1, src: '/images/affiches/flyer-june-2025.png' },
   { id: 2, label: 'Affiche — décembre 2025', w: 1, h: 1, src: '/images/affiches/flyer-december-2025.png' },
+  { id: 3, label: 'Affiche — juin 2026', w: 1, h: 1, src: '/images/affiches/Flyer june 2026.jpeg' },
 ]
 
 const tourColors = ['#f0e040', '#2af598', '#ff3d3d', '#f0e040', '#2af598', '#ff3d3d', '#f0e040', '#2af598']
