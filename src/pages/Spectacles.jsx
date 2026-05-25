@@ -19,7 +19,7 @@ const upcoming = [
     venueFr: 'Room 52, New York',
     venueEn: 'Room 52, New York',
     ticket: 'https://www.eventbrite.com/e/les-interrupteurs-french-improv-nyc-style-fully-unhinged-tickets-1988197209374',
-    poster: null,
+    poster: '/images/affiches/Flyer june 2026.jpeg',
   },
 ]
 
