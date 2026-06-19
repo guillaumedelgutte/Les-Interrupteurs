@@ -37,7 +37,7 @@ const t = {
 const inputStyle = {
   width: '100%',
   background: 'rgba(255,255,255,0.04)',
-  border: '1px solid rgba(255,255,255,0.1)',
+  border: '1px solid rgba(255,255,255,0.08)',
   borderRadius: 'var(--radius)',
   color: 'var(--white)',
   fontFamily: 'var(--font-body)',
@@ -59,7 +59,7 @@ export default function Contact() {
   }
 
   const handleFocus = (e) => { e.target.style.borderColor = 'var(--yellow)' }
-  const handleBlur = (e) => { e.target.style.borderColor = 'rgba(255,255,255,0.1)' }
+  const handleBlur = (e) => { e.target.style.borderColor = 'rgba(255,255,255,0.08)' }
 
   return (
     <div className="page-wrapper">
@@ -89,7 +89,7 @@ export default function Contact() {
                 display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12,
                 padding: '18px',
                 background: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(255,255,255,0.1)',
+                border: '1px solid rgba(255,255,255,0.08)',
                 borderRadius: 'var(--radius-lg)',
                 color: 'var(--white)',
                 fontFamily: 'var(--font-display)',
@@ -195,8 +195,8 @@ export default function Contact() {
             ) : (
               <div style={{
                 padding: '48px',
-                background: 'rgba(42,245,152,0.06)',
-                border: '1px solid rgba(42,245,152,0.2)',
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(181,69,27,0.2)',
                 borderRadius: 'var(--radius-lg)',
                 textAlign: 'center',
               }}>
@@ -210,8 +210,8 @@ export default function Contact() {
             <div className="contact-sidebar" style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
               <div style={{
                 padding: '28px',
-                background: 'rgba(255,255,255,0.02)',
-                border: '1px solid rgba(255,255,255,0.06)',
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid rgba(255,255,255,0.07)',
                 borderRadius: 'var(--radius-lg)',
               }}>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--electric)', marginBottom: 16 }}>
@@ -228,7 +228,7 @@ export default function Contact() {
                     padding: '14px 16px',
                     background: 'rgba(255,255,255,0.04)',
                     borderRadius: 'var(--radius)',
-                    border: '1px solid rgba(255,255,255,0.06)',
+                    border: '1px solid rgba(255,255,255,0.07)',
                     color: 'var(--white)',
                     transition: 'border-color 0.2s',
                     fontFamily: 'var(--font-display)',
@@ -236,7 +236,7 @@ export default function Contact() {
                     fontSize: '0.9rem',
                   }}
                   onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'}
-                  onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'}
+                  onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)'}
                 >
                   <span style={{ fontSize: '1.2rem' }}>📸</span>
                   @lesinterrupteurs
@@ -245,8 +245,8 @@ export default function Contact() {
 
               <div style={{
                 padding: '28px',
-                background: 'rgba(240,224,64,0.04)',
-                border: '1px solid rgba(240,224,64,0.15)',
+                background: 'rgba(200,134,10,0.06)',
+                border: '1px solid rgba(200,134,10,0.2)',
                 borderRadius: 'var(--radius-lg)',
               }}>
                 <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1rem', color: 'var(--yellow)', marginBottom: 8 }}>

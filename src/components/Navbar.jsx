@@ -47,9 +47,9 @@ export default function Navbar() {
         display: 'flex',
         alignItems: 'center',
         padding: '0 32px',
-        background: scrolled ? 'rgba(10,10,10,0.95)' : 'transparent',
+        background: scrolled ? 'rgba(45,28,10,0.96)' : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid #222' : '1px solid transparent',
+        borderBottom: scrolled ? '1px solid rgba(90,58,26,0.5)' : '1px solid transparent',
         transition: 'all 0.3s ease',
         justifyContent: 'space-between',
       }}>
@@ -112,6 +112,7 @@ export default function Navbar() {
               e.currentTarget.style.color = 'var(--black)'
               e.currentTarget.style.borderColor = 'var(--electric)'
             }}
+
             onMouseLeave={e => {
               e.currentTarget.style.background = 'transparent'
               e.currentTarget.style.color = 'var(--electric)'

@@ -1,12 +1,12 @@
 :root {
-  --black: #0a0a0a;
-  --white: #f5f2ec;
-  --yellow: #f0e040;
-  --electric: #2af598;
-  --red: #ff3d3d;
-  --gray-dark: #1a1a1a;
-  --gray-mid: #333333;
-  --gray-light: #888;
+  --black: #2d1c0a;
+  --white: #f2ead8;
+  --yellow: #d4920a;
+  --electric: #c4724a;
+  --red: #c0392b;
+  --gray-dark: #3d2810;
+  --gray-mid: #5a3a1a;
+  --gray-light: #9a8070;
   --font-display: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
   --nav-height: 72px;
@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb { background: var(--gray-mid); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--gray-mid); border-radius: 3px; opacity: 0.6; }
 
 /* Utility */
 .container {

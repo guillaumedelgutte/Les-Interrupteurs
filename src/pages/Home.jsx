@@ -57,7 +57,7 @@ export default function Home() {
         {/* Background grid lines */}
         <div aria-hidden style={{
           position: 'absolute', inset: 0,
-          backgroundImage: 'linear-gradient(rgba(240,224,64,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(240,224,64,0.04) 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(rgba(232,168,32,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(232,168,32,0.03) 1px, transparent 1px)',
           backgroundSize: '80px 80px',
         }} />
 
@@ -71,7 +71,7 @@ export default function Home() {
           fontWeight: 800,
           fontSize: 'clamp(280px, 40vw, 520px)',
           color: 'transparent',
-          WebkitTextStroke: '1px rgba(240,224,64,0.07)',
+          WebkitTextStroke: '1px rgba(232,168,32,0.06)',
           lineHeight: 1,
           userSelect: 'none',
           pointerEvents: 'none',
@@ -94,7 +94,7 @@ export default function Home() {
             fontFamily: 'var(--font-body)',
             fontWeight: 300,
             fontSize: 'clamp(1rem, 2vw, 1.3rem)',
-            color: 'rgba(245,242,236,0.65)',
+            color: 'rgba(242,234,216,0.65)',
             maxWidth: 480,
             marginBottom: 48,
             lineHeight: 1.65,
@@ -106,7 +106,7 @@ export default function Home() {
             <Link to="/spectacles" style={{
               display: 'inline-flex', alignItems: 'center', gap: 10,
               background: 'var(--yellow)',
-              color: 'var(--black)',
+              color: '#1c1410',
               fontFamily: 'var(--font-display)',
               fontWeight: 700,
               fontSize: '0.85rem',
@@ -132,7 +132,7 @@ export default function Home() {
               textTransform: 'uppercase',
               padding: '14px 28px',
               borderRadius: 'var(--radius)',
-              border: '1px solid rgba(245,242,236,0.2)',
+              border: '1px solid rgba(242,234,216,0.2)',
               transition: 'border-color 0.15s, color 0.15s',
             }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--white)'; e.currentTarget.style.color = 'var(--white)' }}

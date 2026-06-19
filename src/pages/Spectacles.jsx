@@ -106,19 +106,19 @@ export default function Spectacles() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16 }}>
               {upcoming.map(show => (
                 <div key={show.id} style={{
-                  background: 'rgba(255,255,255,0.02)',
-                  border: '1px solid rgba(240,224,64,0.25)',
+                  background: 'rgba(255,255,255,0.03)',
+                  border: '1px solid rgba(200,134,10,0.25)',
                   borderRadius: 'var(--radius-lg)',
                   overflow: 'hidden',
                 }}>
                   {/* Flyer placeholder */}
                   <div style={{
                     height: 220,
-                    background: 'rgba(240,224,64,0.05)',
+                    background: 'rgba(200,134,10,0.06)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    borderBottom: '1px solid rgba(240,224,64,0.12)',
+                    borderBottom: '1px solid rgba(200,134,10,0.15)',
                   }}>
                     {show.poster ? (
                       <img src={show.poster} alt="Affiche" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -133,8 +133,8 @@ export default function Spectacles() {
                       display: 'inline-block',
                       padding: '4px 10px',
                       borderRadius: 'var(--radius)',
-                      background: 'rgba(240,224,64,0.12)',
-                      border: '1px solid rgba(240,224,64,0.28)',
+                      background: 'rgba(200,134,10,0.1)',
+                      border: '1px solid rgba(200,134,10,0.3)',
                       color: 'var(--yellow)',
                       fontFamily: 'var(--font-display)',
                       fontWeight: 700,
@@ -189,17 +189,17 @@ export default function Spectacles() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16 }}>
             {history.map((item, i) => (
               <div key={item.id} style={{
-                background: 'rgba(255,255,255,0.02)',
-                border: '1px solid rgba(255,255,255,0.06)',
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.07)',
                 borderRadius: 'var(--radius-lg)',
                 overflow: 'hidden',
                 animation: `fadeUp 0.5s ease ${i * 0.08}s both`,
               }}>
-                <div style={{ height: 220, background: 'rgba(255,255,255,0.03)' }}>
+                <div style={{ height: 220, background: 'rgba(255,255,255,0.04)' }}>
                   {item.poster ? (
                     <img src={item.poster} alt="Affiche spectacle" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   ) : (
-                    <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.35)', fontSize: '2rem' }}>⚡</div>
+                    <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.2)', fontSize: '2rem' }}>⚡</div>
                   )}
                 </div>
 
@@ -208,8 +208,8 @@ export default function Spectacles() {
                     display: 'inline-block',
                     padding: '4px 10px',
                     borderRadius: 'var(--radius)',
-                    background: 'rgba(240,224,64,0.12)',
-                    border: '1px solid rgba(240,224,64,0.28)',
+                    background: 'rgba(200,134,10,0.1)',
+                    border: '1px solid rgba(200,134,10,0.3)',
                     color: 'var(--yellow)',
                     fontFamily: 'var(--font-display)',
                     fontWeight: 700,

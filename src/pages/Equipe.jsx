@@ -9,7 +9,7 @@ const members = [
     roleEn: 'Improviser',
     bio: 'Toujours en train de chercher le jeu - et souvent la premiere a le trouver. Sur scene comme dans la vie, elle a une oreille pour tout et un telephone greffe a la main.',
     bioEn: 'Always looking for the game, and often the first to find it.',
-    color: '#f0e040',
+    color: '#c8860a',
     initials: 'I',
     photo: '/images/equipe/Isa.jpeg',
   },
@@ -20,7 +20,7 @@ const members = [
     roleEn: 'Improviser',
     bio: 'Il arrive sur scene comme s\'il avait quelque chose a prouver - et il le prouve. Energie brute, regard affute, toujours pret a transformer un defi en opportunite.',
     bioEn: 'Raw energy, sharp focus, always ready to turn a challenge into an opportunity.',
-    color: '#ff3d3d',
+    color: '#b83c2a',
     initials: 'Q',
     photo: '/images/equipe/Quentin.jpeg',
   },
@@ -31,7 +31,7 @@ const members = [
     roleEn: 'Improviser',
     bio: 'La meilleure pour couper les oignons et prendre soin de tout le monde. Elle fait pleurer - mais avec beaucoup d\'amour.',
     bioEn: 'The best at making people cry, but with love.',
-    color: '#2af598',
+    color: '#b5451b',
     initials: 'L',
     photo: '/images/equipe/Leo.jpeg',
   },
@@ -42,7 +42,7 @@ const members = [
     roleEn: 'Improviser',
     bio: 'Il observe. Il analyse. Il inspecte chaque scene comme s\'il cherchait un coupable. Entre deux cigarettes, il vous coache pour que vous soyez meilleur.',
     bioEn: 'He observes, analyses, and coaches between scenes.',
-    color: '#f0e040',
+    color: '#c8860a',
     initials: 'C',
     photo: '/images/equipe/Come.jpeg',
   },
@@ -53,7 +53,7 @@ const members = [
     roleEn: 'Improviser',
     bio: 'Le roi de la punchline. Une scene, une replique qui fait tout basculer. Personne ne sait comment il fait. Lui non plus.',
     bioEn: 'The king of punchlines. Nobody knows how he does it. Him neither.',
-    color: '#2af598',
+    color: '#b5451b',
     initials: 'G',
     photo: '/images/equipe/GuillaumeLuu.jpeg',
   },
@@ -64,7 +64,7 @@ const members = [
     roleEn: 'Improviser',
     bio: 'Elle est jamais loin d\'un accent du Ch\'Nord qu\'a pas rapport. Et pourtant, ca marche a tous les coups.',
     bioEn: 'Always one random accent away, and it somehow always works.',
-    color: '#f0e040',
+    color: '#c8860a',
     initials: 'F',
     photo: '/images/equipe/Faustine.jpeg',
   },
@@ -75,7 +75,7 @@ const members = [
     roleEn: 'Improviser',
     bio: 'Specialiste des idiots - avec une tendresse infinie pour eux. Fan de tuning et de personnages qui ne comprennent pas tout a fait ce qui se passe.',
     bioEn: 'Specialist of lovable idiots and chaotic characters.',
-    color: '#ff3d3d',
+    color: '#b83c2a',
     initials: 'G',
     photo: '/images/equipe/guillaumeD.jpeg',
   },
@@ -86,7 +86,7 @@ const members = [
     roleEn: 'Coach (maybe)',
     bio: 'Notre coach - enfin, en theorie. Il est la, il nous guide, il est brillant. Mais s\'engager officiellement ? On attend encore la reponse.',
     bioEn: 'Our coach - at least in theory.',
-    color: '#2af598',
+    color: '#b5451b',
     initials: 'J',
     photo: '/images/equipe/jeremy.jpeg',
   },
@@ -129,7 +129,7 @@ export default function Equipe() {
                 {/* Photo area */}
                 <div style={{
                   height: 240,
-                  background: m.photo ? 'rgba(255,255,255,0.03)' : m.color + '22',
+                  background: m.photo ? 'rgba(255,255,255,0.04)' : m.color + '22',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   borderBottom: `1px solid ${m.color + '33'}`,
                   overflow: 'hidden',
@@ -170,7 +170,7 @@ export default function Equipe() {
                     {lang === 'fr' ? m.role : m.roleEn}
                   </div>
 
-                  <p style={{ color: 'rgba(245,242,236,0.65)', fontSize: '0.9rem', lineHeight: 1.65 }}>
+                  <p style={{ color: 'rgba(242,234,216,0.65)', fontSize: '0.9rem', lineHeight: 1.65 }}>
                     {lang === 'fr' ? m.bio : m.bioEn}
                   </p>
                 </div>
