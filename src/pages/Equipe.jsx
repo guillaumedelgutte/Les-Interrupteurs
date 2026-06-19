@@ -12,6 +12,7 @@ const members = [
     color: '#c8860a',
     initials: 'I',
     photo: '/images/equipe/Isa.jpeg',
+    photoPosition: 'center 60%',
   },
   {
     id: 2,
@@ -135,7 +136,7 @@ export default function Equipe() {
                   overflow: 'hidden',
                 }}>
                   {m.photo ? (
-                    <img src={m.photo} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%' }} />
+                    <img src={m.photo} alt={m.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: m.photoPosition || 'center 15%' }} />
                   ) : (
                     <span style={{
                       fontFamily: 'var(--font-display)', fontWeight: 800,
