@@ -24,6 +24,7 @@ const members = [
     color: '#b83c2a',
     initials: 'Q',
     photo: '/images/equipe/Quentin.jpeg',
+    photoPosition: 'center center',
   },
   {
     id: 3,
