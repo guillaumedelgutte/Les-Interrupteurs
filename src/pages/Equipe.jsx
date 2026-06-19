@@ -77,7 +77,7 @@ const members = [
     bioEn: 'Specialist of lovable idiots and chaotic characters.',
     color: '#b83c2a',
     initials: 'G',
-    photo: '/images/equipe/guillaumeD.jpeg',
+    photo: '/images/equipe/GuillaumeD.png',
   },
   {
     id: 8,
